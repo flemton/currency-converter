@@ -14,11 +14,12 @@ function App() {
       <BrowserRouter>
         <Provider store={store}>
           <Routes>
-            <Route path="/" element={<Layout />} />
-            <Route index element={<Home />} />
-            <Route path="stocks/actives" element={<DisplayActives />} />
-            <Route path="stocks/list" element={<DisplayList />} />
-            <Route path="forex" element={<DisplayForex />} />
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="stocks/actives" element={<DisplayActives />} />
+              <Route path="stocks/list" element={<DisplayList />} />
+              <Route path="forex" element={<DisplayForex />} />
+            </Route>
           </Routes>
         </Provider>
       </BrowserRouter>
