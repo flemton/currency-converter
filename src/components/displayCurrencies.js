@@ -1,28 +1,26 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import getForex from './getCurrencies';
+import getCurrencies from './getCurrencies';
 
-const DisplayForex = () => {
-  const stocks = useSelector((state) => state.stocks.forex);
+const DisplayCurrencies = () => {
+  const currencies = useSelector((state) => state.currencies);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getForex());
+    dispatch(getCurrencies());
   }, [dispatch]);
+
   return (
     <div>
-      <h3>List</h3>
-      {stocks?.map((stock) => (
-        <div key={stock.ticker}>
-          <h3>{stock.ticker}</h3>
+      <h3>Currencies</h3>
+      {Object.entries(currencies.currencies)?.map(([key, value]) => (
+        <div key={key}>
           <ul>
-            <li>{stock.bid}</li>
-            <li>{stock.ask}</li>
-            <li>{stock.open}</li>
-            <li>{stock.low}</li>
-            <li>{stock.high}</li>
-            <li>{stock.changes}</li>
-            <li>{stock.date}</li>
+            <li>
+              {`${key}`}
+              :
+              {`${value}`}
+            </li>
           </ul>
         </div>
       ))}
@@ -30,4 +28,4 @@ const DisplayForex = () => {
   );
 };
 
-export default DisplayForex;
+export default DisplayCurrencies;
