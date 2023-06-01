@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import getCurrencies from './getCurrencies';
+import Details from './Details';
 
 const Home = () => {
   const currencies = useSelector((state) => state.currencies);
@@ -20,6 +21,10 @@ const Home = () => {
           {currencies.total}
           )
         </Link>
+      </div>
+      <div>
+        <h3>Converter</h3>
+        <Details cfrom="usd" cto="ghs" />
       </div>
     </div>
   );
