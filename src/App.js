@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import store from './redux/store';
 import DisplayActives from './components/stocksCategory/actives/displayActives';
+import DisplayList from './components/stocksCategory/list/displayList';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
             <Route path="stocks/actives" element={<DisplayActives />} />
+            <Route path="stocks/list" element={<DisplayList />} />
           </Routes>
         </Provider>
       </BrowserRouter>
