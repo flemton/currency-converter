@@ -1,7 +1,10 @@
-import React from 'react';
+import DisplayStocks from './displayStocks';
 
-function Home() {
-  return <div>Home</div>;
-}
+const Home = () => (
+  <div>
+    <h2>Stocks</h2>
+    <DisplayStocks />
+  </div>
+);
 
 export default Home;
