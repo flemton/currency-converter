@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import getForex from './getForex';
+import getForex from './getCurrencies';
 
 const DisplayForex = () => {
   const stocks = useSelector((state) => state.stocks.forex);
