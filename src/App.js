@@ -6,7 +6,7 @@ import Home from './components/Home';
 import store from './redux/store';
 import DisplayActives from './components/stocksCategory/actives/displayActives';
 import DisplayList from './components/stocksCategory/list/displayList';
-import DisplayForex from './components/stocksCategory/forex/displayForex';
+import DisplayForex from './components/displayCurrencies';
 
 function App() {
   return (

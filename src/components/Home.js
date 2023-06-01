@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import getActiveStocks from './stocksCategory/actives/getActiveStocks';
 import getStockList from './stocksCategory/list/getStockList';
-import getForex from './stocksCategory/forex/getForex';
+import getForex from './getCurrencies';
 
 const Home = () => {
   const stocks = useSelector((state) => state.stocks);

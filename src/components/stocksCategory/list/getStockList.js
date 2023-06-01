@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import apikey, { apiUrl } from '../../../misc/apiKey';
+import apikey, { apiUrl } from '../../../misc/apiUrl';
 
 const getStockList = createAsyncThunk('stocks/list', async () => {
   const response = await fetch(`${apiUrl}etf/list?apikey=${apikey}`);
