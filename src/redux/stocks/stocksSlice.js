@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import getActiveStocks from '../../components/getActiveStocks';
+import getActiveStocks from '../../components/stocksCategory/actives/getActiveStocks';
 
 const initialState = {};
 
@@ -10,7 +10,7 @@ const stocksSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(getActiveStocks.fulfilled, (state, action) => ({
       ...state,
-      stocks: action.payload,
+      actives: action.payload,
     }));
   },
 });

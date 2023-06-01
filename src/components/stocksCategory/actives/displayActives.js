@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import getActiveStocks from './getActiveStocks';
 
-const DisplayStocks = () => {
-  const stocks = useSelector((state) => state.stocks.stocks);
+const DisplayActives = () => {
+  const stocks = useSelector((state) => state.stocks.actives);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -11,6 +11,7 @@ const DisplayStocks = () => {
   }, [dispatch]);
   return (
     <div>
+      <h3>Actives</h3>
       {stocks?.map((stock) => (
         <div key={stock.ticker}>
           <h3>{stock.companyName}</h3>
@@ -25,4 +26,4 @@ const DisplayStocks = () => {
   );
 };
 
-export default DisplayStocks;
+export default DisplayActives;
