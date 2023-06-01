@@ -1,13 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
+import getActiveStocks from '../../components/getActiveStocks';
 
 const initialState = {};
 
 const stocksSlice = createSlice({
-  name: "stocks",
+  name: 'stocks',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase;
+    builder.addCase(getActiveStocks.fulfilled, (state, action) => ({
+      ...state,
+      stocks: action.payload,
+    }));
   },
 });
 
