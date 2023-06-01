@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 import getActiveStocks from '../../components/stocksCategory/actives/getActiveStocks';
 import getStockList from '../../components/stocksCategory/list/getStockList';
-import getForex from '../../components/stocksCategory/forex/getForex';
+import getCurrencies from '../../components/getCurrencies';
 
 const initialState = {};
 
-const stocksSlice = createSlice({
-  name: 'stocks',
+const currenciesSlice = createSlice({
+  name: 'currencies',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -18,11 +18,11 @@ const stocksSlice = createSlice({
       ...state,
       list: action.payload,
     }));
-    builder.addCase(getForex.fulfilled, (state, action) => ({
+    builder.addCase(getCurrencies.fulfilled, (state, action) => ({
       ...state,
-      forex: action.payload,
+      currencies: action.payload,
     }));
   },
 });
 
-export default stocksSlice.reducer;
+export default currenciesSlice.reducer;
