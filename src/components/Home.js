@@ -1,44 +1,33 @@
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import getActiveStocks from './stocksCategory/actives/getActiveStocks';
-import getStockList from './stocksCategory/list/getStockList';
-import getForex from './stocksCategory/forex/getForex';
+import { Link } from 'react-router-dom';
+import getCurrencies from './getCurrencies';
+import { clearConverted, currency } from '../redux/stocks/currenciesSlice';
 
 const Home = () => {
-  const stocks = useSelector((state) => state.stocks);
+  const currencies = useSelector((state) => state.currencies);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getActiveStocks());
-    dispatch(getStockList());
-    dispatch(getForex());
+    dispatch(getCurrencies());
   }, [dispatch]);
 
   return (
     <div>
-      <h2>Stocks</h2>
-      <div>
-        <Link to="stocks/actives">
-          Actives (
-          {stocks.actives?.length}
-          )
-        </Link>
-      </div>
-      <div>
-        <Link to="stocks/list">
-          List (
-          {stocks.list?.length}
-          )
-        </Link>
-      </div>
-      <div>
-        <Link to="forex">
-          Forex (
-          {stocks.forex?.length}
-          )
-        </Link>
-      </div>
+      <h3>Currencies</h3>
+      {Object.entries(currencies.currencies)?.map(([key, value]) => (
+        <div key={key}>
+          <ul>
+            <li>
+              <Link to="details" onClick={(() => { dispatch(clearConverted()); dispatch(currency(key)); })}>
+                {`${key}`}
+                :
+                {`${value}`}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      ))}
     </div>
   );
 };

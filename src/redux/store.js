@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import stocksReducer from './stocks/stocksSlice';
+import currenciesReducer from './stocks/currenciesSlice';
 
 const store = configureStore({
   reducer: {
-    stocks: stocksReducer,
+    currencies: currenciesReducer,
   },
 });
 
