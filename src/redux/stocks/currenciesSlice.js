@@ -12,7 +12,11 @@ const currenciesSlice = createSlice({
   reducers: {
     clearConverted: (state) => ({
       ...state,
-      converted: { none: 'Check currencies', nan: '0' },
+      converted: { none: 'Check currencies', from: '--', to: '--' },
+    }),
+    currency: (state, action) => ({
+      ...state,
+      currency: action.payload,
     }),
   },
   extraReducers: (builder) => {
@@ -29,6 +33,6 @@ const currenciesSlice = createSlice({
   },
 });
 
-export const { clearConverted } = currenciesSlice.actions;
+export const { clearConverted, currency } = currenciesSlice.actions;
 
 export default currenciesSlice.reducer;
