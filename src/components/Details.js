@@ -24,18 +24,17 @@ const Details = () => {
 
   const convertedA = converted.converted ? Object.entries(converted.converted) : [{ one: 'one', none: 'Check currencies' }, { from: '--', to: '--' }];
   return (
-    <div>
+    <div className="details">
+      Convert
       <div>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={(e) => handleSubmit(e)} className="form">
           <label>
-            From
-            <input required type="text" id="from" name="from" onBlur={(e) => setFrom(e.target.value)} />
+            <input required type="text" placeholder="from" id="from" name="from" onBlur={(e) => setFrom(e.target.value)} />
           </label>
           <label>
-            To
-            <input required type="text" id="to" name="to" onBlur={(e) => setTo(e.target.value)} />
+            <input required type="text" placeholder="to" id="to" name="to" onBlur={(e) => setTo(e.target.value)} />
           </label>
-          <button type="submit">Convert</button>
+          <button type="submit">GO!</button>
         </form>
       </div>
       <h4>

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #ca4176;
 }
 
 .wrapper {
@@ -93,4 +94,38 @@ li {
 
 .cur-list a > p {
   width: 40vw;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: 100vh;
+  background: #ca4176;
+  align-items: center;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 12px 0;
+}
+
+input {
+  text-align: center;
+}
+
+.form button {
+  margin: 12px 0;
+  color: white;
+  border: none;
+  background: transparent;
 }
