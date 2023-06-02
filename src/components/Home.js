@@ -2,7 +2,7 @@ import React from 'react';
 import Currencies from './Currencies';
 
 const Home = () => (
-  <div>
+  <div className="home">
     <Currencies />
   </div>
 );

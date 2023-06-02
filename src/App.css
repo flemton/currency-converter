@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: #ca4176;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .wrapper {
@@ -7,32 +9,124 @@
   flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  padding-left: 50px;
+  text-align: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav {
   display: flex;
-  background: #61dafb;
+  flex-direction: row;
+  background: #e94b89;
   align-items: center;
 }
 
-.nav-items {
-  display: flex;
-  flex-direction: row;
+.home {
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.homepage {
+  width: 36px;
 }
 
 li {
   list-style: none;
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  height: 35vh;
+}
+
+.menu button {
+  width: 100%;
+  height: 100%;
+  background: #d04178;
+  border: none;
+  color: white;
+}
+
+.form button {
+  margin: 12px 0;
+  color: white;
+  border: none;
+  background: transparent;
+}
+
+.menu button:nth-child(even) {
+  background: #ca4176;
+}
+
+.menu button:active {
+  background: #67233e;
+}
+
+.cur {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #e94b89;
+}
+
+.cur:nth-child(odd) {
+  background: #ca4176;
+}
+
+.cur:active {
+  background: #67233e;
+}
+
+.cur-list a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.cur-list a > h4 {
+  width: 60vw;
+}
+
+.cur-list a > p {
+  width: 40vw;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: 100vh;
+  background: #ca4176;
+  align-items: center;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 12px 0;
+}
+
+input {
+  text-align: center;
 }
