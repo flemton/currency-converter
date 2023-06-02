@@ -1,20 +1,13 @@
 import { NavLink } from 'react-router-dom';
 
-const links = [
-  { path: '/', text: 'HOME' },
-  { path: 'details', text: 'DETAILS' },
-];
-
 const Navbar = () => (
   <nav className="nav">
-    <h1 className="homepage">Title</h1>
-    <ul className="nav-items">
-      {links.map((link) => (
-        <li key={link.text}>
-          <NavLink to={link.path}>{link.text}</NavLink>
-        </li>
-      ))}
-    </ul>
+    <NavLink to="/">
+      <h1 className="homepage">{'<'}</h1>
+    </NavLink>
+    <NavLink to="/">
+      <h1 className="header">Currency Converter</h1>
+    </NavLink>
   </nav>
 );
 

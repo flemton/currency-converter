@@ -25,27 +25,32 @@ const Currencies = () => {
     setCur(filterByAlphaRange(currenciesArray, 'a', 'g'));
   }, [fulfilled]);
 
-  if (isLoading) return <div>Loading.. </div>;
+  if (isLoading) return <div>Loading...</div>;
 
   return (
     <div>
-      <h3>Currencies</h3>
-      <div>
-        <ul>
-          <li><button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 'a', 'g'))}>A to F</button></li>
-          <li><button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 'g', 'm'))}>G to L</button></li>
-          <li><button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 'm', 's'))}>M to R</button></li>
-          <li><button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 's', 'z'))}>S to Z</button></li>
-        </ul>
+      <div className="menu">
+        <button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 'a', 'g'))}>A to F</button>
+        <button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 'g', 'm'))}>G to L</button>
+        <button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 'm', 's'))}>M to R</button>
+        <button type="button" onClick={() => setCur(filterByAlphaRange(currenciesArray, 's', 'z'))}>S to Z</button>
       </div>
       {cur?.map((cur) => (
-        <div key={cur[0]}>
+        <div key={cur[0]} className="cur">
           <ul>
-            <li>
+            <li className="cur-list">
               <Link to="details" onClick={(() => { dispatch(clearConverted()); dispatch(currency(cur[0])); })}>
-                {cur[0]}
-                :
-                {cur[1]}
+                <h4>
+                  Name
+                  <br />
+                  {cur[1]}
+                </h4>
+                <p>
+                  Symbol
+                  <br />
+                  {' '}
+                  {cur[0]}
+                </p>
               </Link>
             </li>
           </ul>
