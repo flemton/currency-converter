@@ -53,9 +53,16 @@ li {
 .menu button {
   width: 100%;
   height: 100%;
-  background:  #d04178;
+  background: #d04178;
   border: none;
   color: white;
+}
+
+.form button {
+  margin: 12px 0;
+  color: white;
+  border: none;
+  background: transparent;
 }
 
 .menu button:nth-child(even) {
@@ -122,11 +129,4 @@ li {
 
 input {
   text-align: center;
-}
-
-.form button {
-  margin: 12px 0;
-  color: white;
-  border: none;
-  background: transparent;
 }
