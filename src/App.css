@@ -9,11 +9,6 @@
   flex-direction: column;
 }
 
-.header {
-  padding-left: 50px;
-  text-align: center;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -28,6 +23,11 @@ a {
   flex-direction: row;
   background: #e94b89;
   align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  display: flex;
 }
 
 .home {
@@ -112,6 +112,13 @@ li {
   background: #ca4176;
   align-items: center;
   color: white;
+}
+
+.back-arrow {
+  position: absolute;
+  margin-top: 0;
+  top: 15px;
+  left: 12px;
 }
 
 .form {
