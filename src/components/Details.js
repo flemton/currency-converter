@@ -5,27 +5,28 @@ import { useDispatch, useSelector } from 'react-redux';
 import getConverted from './getConverted';
 import { clearConverted } from '../redux/stocks/currenciesSlice';
 
-const Details = ({ cfrom, cto }) => {
-  const converted = useSelector((state) => state.currencies.converted);
+const Details = () => {
+  const converted = useSelector((state) => state.currencies);
   const dispatch = useDispatch();
-  const [from, setFrom] = useState(cfrom);
-  const [to, setTo] = useState(cto);
+  const [from, setFrom] = useState(converted.currency || '--');
+  const [to, setTo] = useState('usd');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(clearConverted());
-    dispatch(getConverted(e.target.from.value, e.target.to.value));
+    dispatch(getConverted({ from: e.target.from.value, to: e.target.to.value }));
   };
 
   useEffect(() => {
     dispatch(clearConverted());
-    dispatch(getConverted({ from, to }));
-  }, [from, to, dispatch]);
-  const convertedA = converted ? Object.entries(converted) : [{ none: 'none' }, { none: 'none' }];
+    dispatch(getConverted({ from, to: 'usd' }));
+  }, [1]);
+
+  const convertedA = converted.converted ? Object.entries(converted.converted) : [{ one: 'one', none: 'Check currencies' }, { from: '--', to: '--' }];
   return (
     <div>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <label>
             From
             <input required type="text" id="from" name="from" onBlur={(e) => setFrom(e.target.value)} />
@@ -34,6 +35,7 @@ const Details = ({ cfrom, cto }) => {
             To
             <input required type="text" id="to" name="to" onBlur={(e) => setTo(e.target.value)} />
           </label>
+          <button type="submit">Convert</button>
         </form>
       </div>
       <h4>
@@ -46,10 +48,9 @@ const Details = ({ cfrom, cto }) => {
         {' '}
         {from.toUpperCase()}
         {' equals '}
+        {convertedA[1][1]}
         {' '}
         {to.toUpperCase()}
-        {' '}
-        {convertedA[1][1]}
       </p>
     </div>
   );
