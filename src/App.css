@@ -33,6 +33,6 @@
   flex-direction: row;
 }
 
-.nav-items li {
+li {
   list-style: none;
 }
