@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`det test if home renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="details"
+      >
+        Convert
+        <div>
+          <form
+            class="form"
+          >
+            <label>
+              <input
+                id="from"
+                name="from"
+                placeholder="from"
+                required=""
+                type="text"
+              />
+            </label>
+            <label>
+              <input
+                id="to"
+                name="to"
+                placeholder="to"
+                required=""
+                type="text"
+              />
+            </label>
+            <button
+              type="submit"
+            >
+              GO!
+            </button>
+          </form>
+        </div>
+        <h4>
+          Date:
+           
+          Check currencies
+        </h4>
+        <p>
+          1
+           
+          --
+           equals 
+          --
+           
+          USD
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="details"
+    >
+      Convert
+      <div>
+        <form
+          class="form"
+        >
+          <label>
+            <input
+              id="from"
+              name="from"
+              placeholder="from"
+              required=""
+              type="text"
+            />
+          </label>
+          <label>
+            <input
+              id="to"
+              name="to"
+              placeholder="to"
+              required=""
+              type="text"
+            />
+          </label>
+          <button
+            type="submit"
+          >
+            GO!
+          </button>
+        </form>
+      </div>
+      <h4>
+        Date:
+         
+        Check currencies
+      </h4>
+      <p>
+        1
+         
+        --
+         equals 
+        --
+         
+        USD
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`detail test if details renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="details"
+      >
+        Convert
+        <div>
+          <form
+            class="form"
+          >
+            <label>
+              <input
+                id="from"
+                name="from"
+                placeholder="from"
+                required=""
+                type="text"
+              />
+            </label>
+            <label>
+              <input
+                id="to"
+                name="to"
+                placeholder="to"
+                required=""
+                type="text"
+              />
+            </label>
+            <button
+              type="submit"
+            >
+              GO!
+            </button>
+          </form>
+        </div>
+        <h4>
+          Date:
+           
+          Check currencies
+        </h4>
+        <p>
+          1
+           
+          --
+           equals 
+          --
+           
+          USD
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="details"
+    >
+      Convert
+      <div>
+        <form
+          class="form"
+        >
+          <label>
+            <input
+              id="from"
+              name="from"
+              placeholder="from"
+              required=""
+              type="text"
+            />
+          </label>
+          <label>
+            <input
+              id="to"
+              name="to"
+              placeholder="to"
+              required=""
+              type="text"
+            />
+          </label>
+          <button
+            type="submit"
+          >
+            GO!
+          </button>
+        </form>
+      </div>
+      <h4>
+        Date:
+         
+        Check currencies
+      </h4>
+      <p>
+        1
+         
+        --
+         equals 
+        --
+         
+        USD
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`home test if home renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="home"
+        data-testid="home"
+      >
+        <div>
+          Loading...
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="home"
+      data-testid="home"
+    >
+      <div>
+        Loading...
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
