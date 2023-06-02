@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import store from './redux/store';
-import DisplayCurrencies from './components/displayCurrencies';
+import Details from './components/Details';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
-              <Route path="currencies" element={<DisplayCurrencies />} />
+              <Route path="details" element={<Details />} />
             </Route>
           </Routes>
         </Provider>
