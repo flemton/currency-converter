@@ -4,6 +4,8 @@ import getConverted from '../../components/getConverted';
 
 const initialState = {
   currencies: {},
+  isLoading: false,
+  fulfilled: false,
 };
 
 const currenciesSlice = createSlice({
@@ -23,12 +25,18 @@ const currenciesSlice = createSlice({
     builder.addCase(getCurrencies.fulfilled, (state, action) => ({
       ...state,
       currencies: action.payload,
+      isLoading: false,
       ...state.currencies,
+      fulfilled: true,
       total: Object.keys(action.payload).length,
     }));
     builder.addCase(getConverted.fulfilled, (state, action) => ({
       ...state,
       converted: action.payload,
+    }));
+    builder.addCase(getCurrencies.pending, (state) => ({
+      ...state,
+      isLoading: true,
     }));
   },
 });
