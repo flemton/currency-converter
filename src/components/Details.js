@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import getConverted from './getConverted';
 import { clearConverted } from '../redux/stocks/currenciesSlice';
 
@@ -25,6 +26,9 @@ const Details = () => {
   const convertedA = converted.converted ? Object.entries(converted.converted) : [{ one: 'one', none: 'Check currencies' }, { from: '--', to: '--' }];
   return (
     <div className="details">
+      <NavLink to="/">
+        <h1 className="back-arrow">{'<'}</h1>
+      </NavLink>
       Convert
       <div>
         <form onSubmit={(e) => handleSubmit(e)} className="form">

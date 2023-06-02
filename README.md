@@ -201,7 +201,7 @@ I would like to thank the Microverse comunity,[Nelson Sakwa](https://www.behance
 
 ## 📝 License <a name="license"></a>
 
-This project is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/legalcode) licensed.
+This project is [Creative Commons](./LICENSE) licensed.
 
 <a href="LICENSE.md">
 
