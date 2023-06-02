@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for the Header component Should render a snapshot of the Header component 1`] = `
+<h1
+  class="header"
+>
+  Currency Converter
+</h1>
+`;
+
+exports[`Test suite for the Navbar component Should render a snapshot of the Header component 1`] = `
+<h1
+  class="header"
+>
+  Currency Converter
+</h1>
+`;
+
+exports[`Test suite for the Navbar component Should render a snapshot of the Navbar component 1`] = `
+<h1
+  class="header"
+>
+  Currency Converter
+</h1>
+`;
