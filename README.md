@@ -13,12 +13,13 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Space Travelers' Hub](#-space-travelers-hub)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
+- [📖 Currency Converter](#about-project)
+- [📖 Video Description](#vid-desc)
+  - [🛠 Built With ](#-built-with)
+    - [Tech Stack ](#tech-stack)
+    - [Key Features ](#key-features)
   - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
+  - [💻 Getting Started ](#-getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -26,11 +27,11 @@
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
+  - [🔭 Future Features ](#-future-features)
   - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+  - [⭐️ Show your support ](#️-show-your-support)
+  - [🙏 Acknowledgments ](#-acknowledgments)
+  - [📝 License ](#-license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -38,6 +39,8 @@
 
 The **Currency Converter** is a web application designed for converting any currency to another, the default conversion is from the clicked/tapped currency to the US dollar but you can also convert from any desired currency to another using the form in the details page by entering the symbols for currencies you want to convert.
 
+## Video Description <a name="vid-desc">
+[Loom video describing project](https://www.loom.com/share/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -192,7 +195,7 @@ If you like this project feel free to make any comment, all contributions are we
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse comunity, my morning session partners, teammates and standup partners for supporting me.
+I would like to thank the Microverse comunity,[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for this perfect design, my morning session partners, teammates and standup partners for supporting me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
