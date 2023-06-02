@@ -40,7 +40,7 @@
 The **Currency Converter** is a web application designed for converting any currency to another, the default conversion is from the clicked/tapped currency to the US dollar but you can also convert from any desired currency to another using the form in the details page by entering the symbols for currencies you want to convert.
 
 ## Video Description <a name="vid-desc">
-[Loom video describing project](https://www.loom.com/share/)
+[Loom video describing project](https://www.loom.com/share/c36c5cb7238946ceb039e20797092fe4)
 
 ## 🛠 Built With <a name="built-with"></a>
 
